@@ -1,106 +1,95 @@
+# Mini Compiler – Frontend Module
+Team Lead: Palak
 
----# 🌐 Mini Compiler – Frontend Module  
-**Team Leader:** Palak  
-
-This repository contains the **Frontend UI** for our Mini Compiler project.  
-Each team member will upload work **only inside the folder assigned to them**.  
-The folder structure is clean, modular and easy to integrate.
-
----
-
-## 📂 Project Structure
-## 👥 **Team Roles – Upload Instructions**
-### **Member 1 – Lexer Input UI**
-Upload these files in:  
-`/lexer-input-ui/`
-- `lexer_input.html`
-- `lexer_input.css`
+This repository contains the frontend structure of our Mini Compiler project.
+Each team member uploads work only in their assigned folders.  
+The structure is modular and organized for easy integration and testing.
 
 ---
 
-### **Member 2 – Token Output UI**
-Upload in:  
-`/token-output-ui/`
-- `token_output.html`
-- `token_output.css`
+## 1. Project Structure
+
+src/  
+│  
+├── 1-language-spec/  
+│      Language specification files (Sonali)  
+│  
+├── 2-lexer/  
+│      Lexer implementation in C++  
+│      Generates tokens_output.txt  
+│  
+├── 3-parser/  
+│      Parser implementation in C++  
+│      Generates parse_output.txt  
+│  
+├── 4-lexer-testing/  
+│      Lexer test cases and invalid program checks  
+│  
+├── 5-parser-testing/  
+│      Parser test cases and syntax validation  
+│  
+└── README.md
 
 ---
 
-### **Member 3 – Parser Output UI**
-Upload in:  
-`/parser-output-ui/`
-- `parser_output.html`
-- `parser_output.css`
+## 2. Updated Team Responsibilities
+
+### Language Designer (Completed)
+**Sonali**  
+- Defines keywords, operators, symbols  
+- Provides sample programs  
+- Uploads: language_spec.txt, specification PDF  
+- Folder: `src/1-language-spec/`
 
 ---
 
-### **Member 4 – Intermediate Code UI**
-Upload in:  
-`/intermediate-ui/`
-- `ic_output.html`
-- `ic_output.css`
+## Lexer Team
+
+### Lexer Developer (Main C++ Coding)  
+**Palak**  
+- Writes `lexer.cpp`  
+- Implements token generation  
+- Produces `tokens_output.txt`  
+- Folder: `src/2-lexer/`
+
+### Lexer Support + Token Testing  
+**Ujjawal**  
+- Tests lexer using valid & invalid programs  
+- Maintains token test cases  
+- Reports lexical errors  
+- Folder: `src/4-lexer-testing/`
 
 ---
 
-### **Member 5 – Layout**
-Upload in:  
-`/layout-theme/`
-- `layout.css`
+## Parser Team
+
+### Parser Developer (Main C++ Coding)  
+**Sooryanshi**  
+- Writes `parser.cpp`  
+- Implements recursive descent parsing  
+- Generates `parse_output.txt`  
+- Folder: `src/3-parser/`
+
+### Parser Support + Syntax Testing  
+**Vidushi**  
+- Designs grammar along with parser developer  
+- Tests parser with valid + invalid syntax cases  
+- Reports grammar/syntax issues  
+- Folder: `src/5-parser-testing/`
 
 ---
 
-### **Member 6 – Theme**
-Upload in:  
-`/layout-theme/`
-- `theme.css`
+## 3. Contribution Rules
+
+1. Upload files only inside your assigned folder.  
+2. Do not change other team folders.  
+3. Use clear and meaningful commit messages.  
+4. Maintain clean and commented code.  
+5. Main branch remains stable.
 
 ---
 
-### **Member 7 – Buttons & Navigation**
-Upload in:  
-`/buttons-navigation/`
-- `nav.html`
-- `buttons.css`
-- `run.js`
+## 4. Build & Run (For Developers Only)
 
----
-
-## 📘 **Commit Guidelines**
-Follow this format for clean commits:
-
-- `"Added lexer input HTML"`
-- `"Updated token output design"`
-- `"Created parser output page"`
-- `"Improved layout structure"`  
-
-Keep commit messages short, clear, and meaningful.
-
----
-
-## 🚫 Do Not:
-- Edit or add anything in `/final/`  
-- Upload files in someone else’s folder  
-- Change folder names or structure  
-
----
-
-## 🔧 Final Integration  
-Palak (Team Leader) will:
-- Review all files  
-- Merge final versions  
-- Add them to `/final/` folder  
-- Hand over to backend team  
-
----
-
-## 🎯 Goal  
-A clean, modular, fully organised frontend with professional structure — easy for backend integration and easy for grading.
-
----
-
-If you want, I can also write:  
-- **WhatsApp message to send to the team**  
-- **Task deadlines**  
-- **Folder naming rules**  
-
-Just tell me.
+### Lexer
+Compile:
