@@ -1,0 +1,12 @@
+#ifndef TOKEN_H
+#define TOKEN_H
+
+#include <string>
+
+struct Token {
+    std::string type;     // e.g. "INT", "ID", "NUM", "PLUS"
+    std::string lexeme;   // actual text from source code
+    int line;             // line number in the source file
+};
+
+#endif
